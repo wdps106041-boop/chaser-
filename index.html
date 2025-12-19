@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>精彩神捕捉遊戲系統</title>
+    <title>楊承霖捕捉遊戲系統</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -415,7 +415,7 @@
 
     <div id="game-wrapper">
         <h1 class="text-3xl font-extrabold mb-4 text-center relative">
-            精彩神捕捉遊戲系統 
+            楊承霖捕捉遊戲系統 
             <button id="title-instructions-button">
                 <i class="fas fa-info-circle text-2xl"></i>
             </button>
@@ -505,39 +505,39 @@
         const TARGET_BONUS_PER_ITEM = 50; // 每捕捉一個目標的額外分數 (如果有多個目標)
 
         const ORIGINAL_IMAGE_DEFINITIONS = {
-    "ITEM_KEY_E2D13": {
-        "path": "item/item001.svg",
+    "ITEM_KEY_6A989188": {
+        "path": "item/item001.png",
         "size": 70,
         "speed": 2,
-        "name": "炸蛋",
+        "name": "詹姆斯·哈登",
         "isBonus": false
     },
-    "ITEM_KEY_2D3B7E68": {
-        "path": "item/item002.svg",
+    "ITEM_KEY_3A131216": {
+        "path": "item/item002.png",
         "size": 55,
         "speed": 1,
-        "name": "快樂鯉魚",
+        "name": "史蒂芬·柯瑞",
         "isBonus": true
     },
-    "ITEM_KEY_CC8A6": {
-        "path": "item/item003.svg",
+    "ITEM_KEY_3AF85261": {
+        "path": "item/item003.png",
         "size": 60,
         "speed": 0.5,
-        "name": "月亮",
+        "name": "凱里·厄文",
         "isBonus": false
     },
-    "ITEM_KEY_E4EEB": {
-        "path": "item/item004.svg",
+    "ITEM_KEY_3704CF76": {
+        "path": "item/item004.png",
         "size": 40,
         "speed": 1,
-        "name": "玉兔",
+        "name": "羅素·衛斯特布魯克",
         "isBonus": false
     },
-    "ITEM_KEY_10066D": {
-        "path": "item/item005.svg",
+    "ITEM_KEY_1E7A989E": {
+        "path": "item/item005.png",
         "size": 50,
         "speed": 2.5,
-        "name": "老虎",
+        "name": "德瑞克·費雪",
         "isBonus": false
     }
 };
@@ -550,10 +550,12 @@
         "name": "入門捕手",
         "duration": 15,
         "required": [
-            "ITEM_KEY_CC8A6"
+            "ITEM_KEY_CC8A6",
+            "ITEM_KEY_6A989188"
         ],
         "forbidden": [
-            "ITEM_KEY_E2D13"
+            "ITEM_KEY_E2D13",
+            "ITEM_KEY_3704CF76"
         ],
         "objectCount": 8,
         "speedMultiplier": 1,
@@ -564,11 +566,15 @@
         "duration": 12,
         "required": [
             "ITEM_KEY_CC8A6",
-            "ITEM_KEY_E4EEB"
+            "ITEM_KEY_E4EEB",
+            "ITEM_KEY_3A131216"
         ],
         "forbidden": [
             "ITEM_KEY_E2D13",
-            "ITEM_KEY_10066D"
+            "ITEM_KEY_10066D",
+            "ITEM_KEY_3AF85261",
+            "ITEM_KEY_6A989188",
+            "ITEM_KEY_1E7A989E"
         ],
         "objectCount": 12,
         "speedMultiplier": 1.3,
@@ -579,11 +585,16 @@
         "duration": 10,
         "required": [
             "ITEM_KEY_CC8A6",
-            "ITEM_KEY_E4EEB"
+            "ITEM_KEY_E4EEB",
+            "ITEM_KEY_3A131216"
         ],
         "forbidden": [
             "ITEM_KEY_E2D13",
-            "ITEM_KEY_10066D"
+            "ITEM_KEY_10066D",
+            "ITEM_KEY_3704CF76",
+            "ITEM_KEY_3AF85261",
+            "ITEM_KEY_1E7A989E",
+            "ITEM_KEY_6A989188"
         ],
         "objectCount": 15,
         "speedMultiplier": 1.6,
